@@ -52,9 +52,11 @@ You only need standard Python installed on your local environment (Python 3.8+ r
    git clone [https://github.com/yourusername/yhm-logic-engine.git](https://github.com/yourusername/yhm-logic-engine.git)
 
 Navigate into the project folder:
+```bash
 cd yhm-logic-engine
 
 Run the CLI script directly using Python:
+```bash
 python main.py
 
 Keyword Topic	Description
