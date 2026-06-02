@@ -24,6 +24,8 @@ The system operates strictly on a deterministic **Input-Process-Output (IPO)** m
 │
 ▼ Not Found?
 [ Fallback Help Dashboard Guidance ]
+
+
 ### Key Components
 
 1. **Configuration & Data Layer:** Maintains an isolated dictionary of tuple-structured keywords mapped to direct, compliant responses.
