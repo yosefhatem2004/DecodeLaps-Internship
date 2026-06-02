@@ -54,11 +54,11 @@ You only need standard Python installed on your local environment (Python 3.8+ r
 Navigate into the project folder:
 ```bash
 cd yhm-logic-engine
-
+```
 Run the CLI script directly using Python:
 ```bash
 python main.py
-
+```
 Keyword Topic	Description
 hello / hi	Say hello to trigger the welcome handler.
 ai / intelligence	Read about the rule-based AI philosophy.
