@@ -5,26 +5,26 @@ A production-grade, rule-based AI chatbot built using a deterministic "white-box
 ## Architecture & Data Flow
 
 The system operates strictly on a deterministic **Input-Process-Output (IPO)** model, ensuring that every user interaction passes through an audit-friendly control layer:
-[ Raw User Input ]
-│
-▼ (Phase 1: Input Processing & Sanitization)
+```text
+[ Raw User Input ] 
+       │
+       ▼ (Phase 1: Input Processing & Sanitization)
 ┌─────────────────────────────────┐
 │ Lowercase, Trimmed Clean String │
 └─────────────────────────────────┘
-│
-▼ (Phase 2: Intent Evaluation Engine)
+       │
+       ▼ (Phase 2: Intent Evaluation Engine)
 ┌─────────────────────────────────┐
 │    Exact Match Verification     │ ──► Found? ──► [ Output Response ]
 └─────────────────────────────────┘
-│
-▼ Not Found?
+       │
+       ▼ Not Found?
 ┌─────────────────────────────────┐
 │     Partial Keyword Scan        │ ──► Found? ──► [ Output Response ]
 └─────────────────────────────────┘
-│
-▼ Not Found?
+       │
+       ▼ Not Found?
 [ Fallback Help Dashboard Guidance ]
-
 
 ### Key Components
 
